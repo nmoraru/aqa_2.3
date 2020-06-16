@@ -36,7 +36,7 @@ class MobileBankApiTestV1 {
       .when()
           .post("/post")
       .then()
-          .statusCode(201)
+          .statusCode(200)
       ;
     }
 }

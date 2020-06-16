@@ -37,6 +37,7 @@ class MobileBankApiTestV1 {
           .post("/post")
       .then()
           .statusCode(200)
+          .body("[0].currency", equalTo("RUB"))
       ;
     }
 }

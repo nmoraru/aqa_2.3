@@ -15,12 +15,12 @@ class MobileBankApiTestV1 {
     void shouldReturnDemoAccounts() {
       given()
           .baseUri("https://postman-echo.com")
-          .body(file)
+          .body("Hi")
       .when()
           .post("/post")
       .then()
           .statusCode(200)
-          .body("data[0].balance", equalTo(992821429))
+          .body("data", equalTo("Hi"))
       ;
     }
 }

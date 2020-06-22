@@ -19,6 +19,7 @@ class MobileBankApiTestV1 {
       .when()
           .post("/post")
       .then()
+          .log().all()
           .statusCode(200)
           .body("data[0].balance", equalTo(992821429))
       ;
